@@ -24,19 +24,18 @@ main {
 }
 
 #info {
-    display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 25px;
 }
 
-#info p {
+#infoP {
     margin: 0;
     margin-right: 8px;
     user-select: none;
 }
 
-#info img {
+#infoImg {
     width: 15px;
     height: 15px;
 }
@@ -83,7 +82,6 @@ main {
 
 #reiniciar {
     margin: 25px 3px 0px 3px;
-    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #65c1ff;
