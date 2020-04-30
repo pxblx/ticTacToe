@@ -32,7 +32,7 @@ main {
 
 #info p {
     margin: 0;
-    margin-right: 10px;
+    margin-right: 8px;
     user-select: none;
 }
 
@@ -68,12 +68,12 @@ main {
 }
 
 .X {
-    background-image: url(https://pxblx.github.io/ticTacToe/img/X.png);
+    background-image: url("../img/X.png");
     background-color: #18a3ff !important;
 }
 
 .O {
-    background-image: url(https://pxblx.github.io/ticTacToe/img/O.png);
+    background-image: url("../img/O.png");
     background-color: #18a3ff !important;
 }
 
@@ -92,7 +92,7 @@ main {
 
 #reiniciar p {
     margin: 0;
-    margin-right: 10px;
+    margin-right: 8px;
     user-select: none;
 }
 
