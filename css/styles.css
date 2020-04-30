@@ -77,6 +77,10 @@ main {
     background-color: #18a3ff !important;
 }
 
+.desactivada {
+    background-color: #18a3ff !important;
+}
+
 #reiniciar {
     margin: 25px 3px 0px 3px;
     display: flex;
