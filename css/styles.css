@@ -1,0 +1,102 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    min-height: 75px;
+    text-align: center;
+    background-color: black;
+}
+
+h1 {
+    margin: 0px;
+    color: white;
+    padding: 25px 0px;
+    user-select: none;
+}
+
+main {
+    text-align: center;
+}
+
+#info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+#info p {
+    margin: 0;
+    margin-right: 10px;
+    user-select: none;
+}
+
+#info img {
+    width: 15px;
+    height: 15px;
+}
+
+#tablero {
+    margin-top: 65px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 25px;
+    background-color: #d9efff;
+}
+
+#tablero div {
+    display: flex;
+}
+
+#tablero div div {
+    background-color: #65c1ff;
+    margin: 3px;
+    width: 75px;
+    height: 75px;
+    background-position: center;
+    background-size: 65%;
+    background-repeat: no-repeat;
+}
+
+#tablero div div:hover {
+    background-color: #18a3ff;
+}
+
+.X {
+    background-image: url(https://pxblx.github.io/ticTacToe/img/X.png);
+    background-color: #18a3ff !important;
+}
+
+.O {
+    background-image: url(https://pxblx.github.io/ticTacToe/img/O.png);
+    background-color: #18a3ff !important;
+}
+
+#reiniciar {
+    margin: 25px 3px 0px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #65c1ff;
+    padding: 8px 12px;
+}
+
+#reiniciar:hover {
+    background-color: #18a3ff;
+}
+
+#reiniciar p {
+    margin: 0;
+    margin-right: 10px;
+    user-select: none;
+}
+
+#reiniciar img {
+    width: 15px;
+    height: 15px;
+}
