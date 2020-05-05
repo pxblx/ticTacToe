@@ -52,7 +52,7 @@ main {
     display: flex;
 }
 
-#tablero div div {
+.celda {
     background-color: #65c1ff;
     margin: 3px;
     width: 75px;
@@ -62,7 +62,7 @@ main {
     background-repeat: no-repeat;
 }
 
-#tablero div div:hover {
+.celda:hover {
     background-color: #18a3ff;
 }
 

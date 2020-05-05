@@ -46,7 +46,7 @@ let ticTacToe = (function () {
 
         // Comprobar horizontal 1
         comprobar(tablero[0] * tablero[1] * tablero[2], [0, 1, 2]);
-        
+
         // Comprobar horizontal 2
         comprobar(tablero[3] * tablero[4] * tablero[5], [3, 4, 5]);
 
