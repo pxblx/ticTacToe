@@ -68,16 +68,18 @@ main {
 
 .X {
     background-image: url("../img/X.png");
-    background-color: #18a3ff !important;
 }
 
 .O {
     background-image: url("../img/O.png");
-    background-color: #18a3ff !important;
+}
+
+.raya {
+    background-color: #f8e57a !important;
 }
 
 .desactivada {
-    background-color: #18a3ff !important;
+    pointer-events: none;
 }
 
 #reiniciar {

@@ -19,21 +19,22 @@ addEventListener("DOMContentLoaded", function () {
     for (let i = 0; i < 9; i++) {
         tablero[i].addEventListener("click", function () {
             if (tablero[i].className === "") {
-                tablero[i].className = ticTacToe.getTurno();
-                let resultado = ticTacToe.clickCelda(i);
-                if (resultado !== "nada") {
+                tablero[i].classList.add(ticTacToe.getTurno(), "desactivada");
+                try {
+                    ticTacToe.clickCelda(i);
+                    infoImg.src = "img/" + ticTacToe.getTurno() + ".png";
+                } catch (resultado) {
                     if (resultado === "empate") {
                         infoP.innerHTML = "Empate";
                         infoImg.style.display = "none";
                     } else {
                         infoP.innerHTML = "Ha ganado";
-                        infoImg.src = "img/" + resultado + ".png";
+                        infoImg.src = "img/" + resultado.ganador + ".png";
+                        tablero.forEach((celda, indice) => {
+                            if (resultado.raya.includes(indice)) celda.classList.add("raya");
+                            celda.classList.add("desactivada");
+                        });
                     }
-                    tablero.forEach(celda => {
-                        if (celda.className === "") celda.className = "desactivada";
-                    });
-                } else {
-                    infoImg.src = "img/" + ticTacToe.getTurno() + ".png";
                 }
             }
         });
