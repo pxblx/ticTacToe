@@ -22,7 +22,6 @@ addEventListener("DOMContentLoaded", function () {
                     infoImg.style.display = "none";
                 } else {
                     infoP.innerHTML = "Ha ganado";
-                    infoImg.src = "img/" + resultado.ganador + ".png";
                     let celdas = document.getElementsByClassName("celda");
                     for (let i = 0; i < celdas.length; i++) {
                         let celda = celdas[i];
