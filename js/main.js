@@ -14,12 +14,10 @@ addEventListener("DOMContentLoaded", function () {
     document.addEventListener("click", function (event) {
         let target = event.target;
         if (target.matches(".celda")) {
-            try {
-                target.classList.add(ticTacToe.getTurno(), "desactivada");
-                ticTacToe.clickCelda(target.id);
-                infoImg.src = "img/" + ticTacToe.getTurno() + ".png";
-            } catch (resultado) {
-                if (resultado === "empate") {
+            target.classList.add(ticTacToe.getTurno(), "desactivada");
+            let resultado = ticTacToe.clickCelda(target.id);
+            if (resultado.finPartida) {
+                if (resultado.ganador === "empate") {
                     infoP.innerHTML = "Empate";
                     infoImg.style.display = "none";
                 } else {
@@ -32,6 +30,8 @@ addEventListener("DOMContentLoaded", function () {
                         celda.classList.add("desactivada");
                     }
                 }
+            } else {
+                infoImg.src = "img/" + ticTacToe.getTurno() + ".png";
             }
         }
     });
